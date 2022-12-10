@@ -15,7 +15,7 @@ function changeBodyColor() {
 
 function onStartButtonClick() {
     changeBodyColor()
-    colorChanger = setInterval(changeBodyColor, 1000)
+    colorChanger = setInterval(changeBodyColor, 1000);
     startButtonEl.disabled = true;
     stopButtonEl.disabled = false;
 }
