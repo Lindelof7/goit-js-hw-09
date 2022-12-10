@@ -14,14 +14,14 @@ function changeBodyColor() {
 }
 
 function onStartButtonClick() {
-    changeBodyColor()
+    changeBodyColor();
     colorChanger = setInterval(changeBodyColor, 1000);
     startButtonEl.disabled = true;
     stopButtonEl.disabled = false;
 }
 
 function onStopButtonClick() {
-    clearTimeout(colorChanger)
+    clearInterval(colorChanger);
     stopButtonEl.disabled = true;
     startButtonEl.disabled = false;
 }
