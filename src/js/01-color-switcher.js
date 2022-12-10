@@ -15,13 +15,13 @@ function changeBodyColor() {
 
 function onStartButtonClick() {
     changeBodyColor();
-    colorChanger = setInterval(changeBodyColor, 1000);
+    let timerId = setInterval(changeBodyColor, 1000);
     startButtonEl.disabled = true;
     stopButtonEl.disabled = false;
 }
 
 function onStopButtonClick() {
-    clearInterval(colorChanger);
+    clearInterval(timerId);
     stopButtonEl.disabled = true;
     startButtonEl.disabled = false;
 }
