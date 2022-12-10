@@ -10,7 +10,7 @@ function getRandomHexColor() {
 }
 
 function changeBodyColor() {
-    bodyEl.style.backgroundColor = getRandomHexColor();
+    return bodyEl.style.backgroundColor = getRandomHexColor();
 }
 
 function onStartButtonClick() {
